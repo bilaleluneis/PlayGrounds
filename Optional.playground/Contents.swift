@@ -5,7 +5,6 @@ Since: 01/03/2016
 Playground code snipptets to learn about Optionals and how to unwrap them in swift 2
 */
 
-import UIKit
 
 var intA:Int? = 1
 var intB:Int? = 2
