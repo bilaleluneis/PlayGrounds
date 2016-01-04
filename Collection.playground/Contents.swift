@@ -64,5 +64,10 @@ if let lastElement = intArrayA.last {
 
 
 //Begin Dictionaries
+var dictionaryA:[String:Int] //uninitalized dictionary key is String and Value is Int
+var dictionaryB:[String:Int] = [String:Int]() //initalized dictionary that is empty
+var dictionaryC = [String:Int]() //initialized using type infrence
+var dictionaryD:[String:Int] = ["one":1] // mutable dictionary initalized
+let dictionaryE:[String:Int] = ["one":1, "two":2, "three":3] //constant (immutable) dictionary initalized with values
 //End Dictionaries
 
