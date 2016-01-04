@@ -6,22 +6,9 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		526569CE1C39EAB5008E0261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526569CD1C39EAB5008E0261 /* AppDelegate.swift */; };
-		526569D01C39EAB5008E0261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526569CF1C39EAB5008E0261 /* ViewController.swift */; };
-		526569D31C39EAB5008E0261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526569D11C39EAB5008E0261 /* Main.storyboard */; };
-		526569D51C39EAB5008E0261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526569D41C39EAB5008E0261 /* Assets.xcassets */; };
-		526569D81C39EAB5008E0261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526569D61C39EAB5008E0261 /* LaunchScreen.storyboard */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		526569CA1C39EAB5008E0261 /* PlayGrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayGrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		526569CD1C39EAB5008E0261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		526569CF1C39EAB5008E0261 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		526569D21C39EAB5008E0261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		526569D41C39EAB5008E0261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		526569D71C39EAB5008E0261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		526569D91C39EAB5008E0261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526569CA1C39EAB5008E0261 /* PlayGrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PlayGrounds.app; path = "/Users/bilaleluneis/Developer/PlayGrounds/build/Debug-iphoneos/PlayGrounds.app"; sourceTree = "<absolute>"; };
+		526569DF1C39EBBF008E0261 /* Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optional.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,30 +25,8 @@
 		526569C11C39EAB5008E0261 = {
 			isa = PBXGroup;
 			children = (
-				526569CC1C39EAB5008E0261 /* PlayGrounds */,
-				526569CB1C39EAB5008E0261 /* Products */,
+				526569DF1C39EBBF008E0261 /* Optional.playground */,
 			);
-			sourceTree = "<group>";
-		};
-		526569CB1C39EAB5008E0261 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				526569CA1C39EAB5008E0261 /* PlayGrounds.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		526569CC1C39EAB5008E0261 /* PlayGrounds */ = {
-			isa = PBXGroup;
-			children = (
-				526569CD1C39EAB5008E0261 /* AppDelegate.swift */,
-				526569CF1C39EAB5008E0261 /* ViewController.swift */,
-				526569D11C39EAB5008E0261 /* Main.storyboard */,
-				526569D41C39EAB5008E0261 /* Assets.xcassets */,
-				526569D61C39EAB5008E0261 /* LaunchScreen.storyboard */,
-				526569D91C39EAB5008E0261 /* Info.plist */,
-			);
-			path = PlayGrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +73,7 @@
 				Base,
 			);
 			mainGroup = 526569C11C39EAB5008E0261;
-			productRefGroup = 526569CB1C39EAB5008E0261 /* Products */;
+			productRefGroup = 526569C11C39EAB5008E0261;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -122,9 +87,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526569D81C39EAB5008E0261 /* LaunchScreen.storyboard in Resources */,
-				526569D51C39EAB5008E0261 /* Assets.xcassets in Resources */,
-				526569D31C39EAB5008E0261 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +97,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526569D01C39EAB5008E0261 /* ViewController.swift in Sources */,
-				526569CE1C39EAB5008E0261 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		526569D11C39EAB5008E0261 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				526569D21C39EAB5008E0261 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		526569D61C39EAB5008E0261 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				526569D71C39EAB5008E0261 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		526569DA1C39EAB5008E0261 /* Debug */ = {
@@ -248,7 +189,6 @@
 		526569DD1C39EAB5008E0261 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayGrounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eluneis.bilal.PlayGrounds;
@@ -259,7 +199,6 @@
 		526569DE1C39EAB5008E0261 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayGrounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eluneis.bilal.PlayGrounds;
