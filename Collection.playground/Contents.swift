@@ -6,6 +6,8 @@ Playground code snipptets to learn about Collections in Swift 2
 */
 
 //Begin Arrays
+print("-------Begin Arrays------------------")
+
 var intArrayA = [Int]() //initialize an empty array of Int
 var intArrayB:[Int] //array of Int that is not initialized
 let intArrayC = [1,2,3,4,5] //array of Ints initalized and uses type infrence and made to be immutable
@@ -55,19 +57,51 @@ for i in 0..<intArrayA.count {
 }
 print(intArrayA)
 
+//looping through an Array
+for i in intArrayA {
+    print(i, terminator: "")
+}
+
 // dealing with Optional in Array
 if let lastElement = intArrayA.last {
-    print(lastElement)
+    print("\n\(lastElement)")
 }
+
+print("-------End Arrays--------------------\n")
 //End Arrays
 
 
 
 //Begin Dictionaries
+print("-------Begin Dictionaries------------")
+
 var dictionaryA:[String:Int] //uninitalized dictionary key is String and Value is Int
 var dictionaryB:[String:Int] = [String:Int]() //initalized dictionary that is empty
 var dictionaryC = [String:Int]() //initialized using type infrence
 var dictionaryD:[String:Int] = ["one":1] // mutable dictionary initalized
 let dictionaryE:[String:Int] = ["one":1, "two":2, "three":3] //constant (immutable) dictionary initalized with values
+
+dictionaryA = [String:Int]()
+dictionaryA.isEmpty
+dictionaryA.count
+dictionaryA["Year"] = 2016
+let year:Int? = dictionaryA["Year"]
+
+//looping through dictionary
+for (key, value) in dictionaryE {
+    print("\(value)")
+}
+
+//removing value for key, the removeVlueForKey returns an Optional
+if let key = dictionaryD.removeValueForKey("three"){ //the dictionary doesnt have value for this key
+    print("value for key = three removed")
+}else{
+    print("no value for key = three found in dictionaryD")
+}
+
+//place all keys into an Array
+var keys:[String] = Array(dictionaryE.keys)
+
+print("-------End Dictionaries--------------")
 //End Dictionaries
 
