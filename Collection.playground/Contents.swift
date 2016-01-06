@@ -105,3 +105,19 @@ var keys:[String] = Array(dictionaryE.keys)
 print("-------End Dictionaries--------------")
 //End Dictionaries
 
+
+//Begin Sets
+print("-------Begin Sets--------------------")
+
+var setA:Set = [1,2,3]
+print(setA)
+
+setA.isEmpty
+setA.count
+setA.insert(3) // notice set will only hold unique objects so the extra 3 in there will not be inserted into set
+print("setA after inserting another 3 into it: \(setA)")
+setA.contains(1)
+
+print("-------End Sets----------------------")
+//End Sets
+
