@@ -2,7 +2,7 @@
 Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/04/2016
 ...
-Playground code snipptets to learn about Collections in Swift 2
+Playground code snippets to learn about Collections in Swift 2
 */
 
 //Begin Arrays
