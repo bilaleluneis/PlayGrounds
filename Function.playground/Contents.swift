@@ -49,6 +49,8 @@ time.hours
 time.minutes
 time.0
 time.1
+let (_,minutesOnly) = getTime() // this allows performance gain as no local copy of hours will be created
+print("minutes only captured via tuples: \(minutesOnly)")
 
 //using default parameters
 func sayHello(to:String = "World") {
@@ -92,4 +94,11 @@ func add(intsToAdd:Int...) ->Int {
 add()
 add(1,2)
 add(1,2,3,4)
+
+//removing the requirment of named parameter after first parameter
+func add(firstNmumber:Int , _secondNumber:Int) -> Int {
+    return firstNmumber + _secondNumber
+}
+
+add(1,2)
 
