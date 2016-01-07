@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		52065DF61C3D7FB600F176E2 /* Function.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Function.playground; sourceTree = "<group>"; };
 		524DBB881C3A8B9200828C7B /* PlayGrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PlayGrounds.app; path = "/Users/bilaleluneis/Developer/PlayGrounds/build/Debug-iphoneos/PlayGrounds.app"; sourceTree = "<absolute>"; };
 		524DBB891C3A8BB900828C7B /* Collection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Collection.playground; sourceTree = "<group>"; };
 		526569DF1C39EBBF008E0261 /* Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optional.playground; sourceTree = "<group>"; };
@@ -26,6 +27,7 @@
 		526569C11C39EAB5008E0261 = {
 			isa = PBXGroup;
 			children = (
+				52065DF61C3D7FB600F176E2 /* Function.playground */,
 				524DBB891C3A8BB900828C7B /* Collection.playground */,
 				526569DF1C39EBBF008E0261 /* Optional.playground */,
 			);
