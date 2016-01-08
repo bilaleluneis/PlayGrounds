@@ -96,9 +96,35 @@ add(1,2)
 add(1,2,3,4)
 
 //removing the requirment of named parameter after first parameter
-func add(firstNmumber:Int , _secondNumber:Int) -> Int {
-    return firstNmumber + _secondNumber
+func add(firstNmumber:Int , _ secondNumber:Int) -> Int {
+    return firstNmumber + secondNumber
 }
 
 add(1,2)
+
+//Most types in Swift are Structs and thus passed by value, bellow is how to pass by Refrence.. reminds me of C++!
+// I believe Classes are passed by Refrence in Swift by default
+var array:[Int] = [1,2,3]
+
+func addToArray(inout array:[Int], newElement:Int){
+    array.append(newElement)
+}
+
+addToArray(&array, newElement: 4)
+array.count
+
+//functions that take a function as parameter
+func performOperation(firstNumber:Int , _ secondNumber:Int, _ operation:(Int,Int) ->Int) -> Int {
+    return operation(firstNumber,secondNumber)
+}
+
+func addOperation(n1:Int,n2:Int) -> Int {
+    return n1 + n2
+}
+
+var opResult:Int = performOperation(1, 2, addOperation)
+
+// assign function to var and use
+var opToExecute:(Int,Int)->Int = addOperation //or could wrote it var opToExecute = addOperation , swift will infrence it
+var opResult2 = performOperation(3, 4, opToExecute)
 
