@@ -12,6 +12,7 @@
 		526569DF1C39EBBF008E0261 /* Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optional.playground; sourceTree = "<group>"; };
 		52815C991C3F21E200A73940 /* PlayGrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayGrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52815C9A1C3F43FD00A73940 /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; };
+		52815C9B1C40193D00A73940 /* Enum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enum.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +29,7 @@
 		526569C11C39EAB5008E0261 = {
 			isa = PBXGroup;
 			children = (
+				52815C9B1C40193D00A73940 /* Enum.playground */,
 				52815C9A1C3F43FD00A73940 /* Closure.playground */,
 				52065DF61C3D7FB600F176E2 /* Function.playground */,
 				524DBB891C3A8BB900828C7B /* Collection.playground */,
