@@ -26,3 +26,20 @@ var multiplyResult = performOperation(3, 5){
     (n1:Int,n2:Int) -> Int? in return n1 * n2
 }
 
+//using closures with Swift standard Libs
+let nonSortedArray:[Int] = [5,7,0,9,3,2]
+
+//applying sort logic using trailing closure
+let sortedArrayDec:[Int] = nonSortedArray.sort(){
+    (n1:Int,n2:Int) -> Bool in
+    return n2 < n1
+}
+
+//Swift can infer arguments in closure so you dont need to specify them
+var sortedArrayAsc:[Int] = nonSortedArray.sort(){ return $1 > $0 }
+print(sortedArrayAsc)
+
+//Swift can also infer the return statment when the closure or function passed is known to return
+sortedArrayAsc = nonSortedArray.sort(){$1 > $0}
+print(sortedArrayAsc)
+
