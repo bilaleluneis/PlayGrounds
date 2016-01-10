@@ -46,3 +46,22 @@ let myResidence = ResidenceInfo(number: 1000, type: "condo")
 let myAddress = Address(street: myStreet, city: myCity, residence: myResidence)
 
 print(myAddress.addressInfo())
+
+//structs can have initalizers
+struct CanFood {
+    var brand:String
+    var expireDate:String
+    
+    init(){
+        self.brand = ""
+        self.expireDate = ""
+    }
+    
+    init(brand:String, expireDate:String){
+        self.brand = brand
+        self.expireDate = expireDate
+    }
+}
+
+var canItem1 = CanFood()
+var canItem2 = CanFood(brand: "kelogs", expireDate: "01/01/2018")
