@@ -17,7 +17,22 @@ class Person {
         self.weight = 0.0
     }
     
+    init(name:String, age:Int, weight:Float){
+        self.name = name
+        self.age = age
+        self.weight = weight
+    }
+    
     deinit{
         print("Person instance with name: \(name) is now destroyed")
     }
 }
+
+//person instance will be destroyed once it reaches the end scope of the function
+func testPersonDinit(personName:String, personAge:Int, personWeight:Float){
+    Person(name:personName, age:personAge, weight:personWeight)
+}
+
+testPersonDinit("Joe", personAge:20, personWeight:150.5)
+
+
