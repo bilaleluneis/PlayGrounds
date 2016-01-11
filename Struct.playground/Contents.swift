@@ -37,6 +37,12 @@ struct Address {
         address += residence.type + " \(residence.number)"
         return address
     }
+    
+    //structs cant have methods or functions that modify internal data
+    //if you want to allow this you need to mark function as mutating
+    mutating func changeStreetName(newStreetName:String){
+        self.street.name = newStreetName
+    }
 }
 
 //strutcs will provide a default memberwise initalizers
