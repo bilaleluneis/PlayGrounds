@@ -60,3 +60,20 @@ struct Planet {
 var earth = Planet() //notice property observer didnt react on init()
 earth.name = "Earth"
 earth.name = "Earth2"
+
+// lazy stored property
+// a property that will not init unless it is used / called.
+class SolarSystem {
+    // i could use [String] or Array<String> :)
+    lazy var planets:Array<String> = self.initPlanets()
+    
+    //this will get called only once to init the values of the array.
+    func initPlanets() -> Array<String> {
+        print("init the Planets in the SolarSystem")
+        return ["Earth","Mars","Venus","Jupiter"]
+    }
+}
+
+var ourSolarSystem = SolarSystem()
+ourSolarSystem.planets
+ourSolarSystem.planets //this prooves that initPlanets gets called only once per instance
