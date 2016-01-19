@@ -17,6 +17,7 @@
 		52815C9D1C4325B700A73940 /* Class.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Class.playground; sourceTree = "<group>"; };
 		52815C9E1C442BFA00A73940 /* Properties.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Properties.playground; sourceTree = "<group>"; };
 		52C23ACF1C4DA23700654F81 /* Extension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Extension.playground; sourceTree = "<group>"; };
+		52C23AD01C4E623600654F81 /* Protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocols.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +34,7 @@
 		526569C11C39EAB5008E0261 = {
 			isa = PBXGroup;
 			children = (
+				52C23AD01C4E623600654F81 /* Protocols.playground */,
 				52C23ACF1C4DA23700654F81 /* Extension.playground */,
 				52815C9E1C442BFA00A73940 /* Properties.playground */,
 				52815C9D1C4325B700A73940 /* Class.playground */,
