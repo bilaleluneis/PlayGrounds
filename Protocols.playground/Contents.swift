@@ -19,9 +19,11 @@ protocol Human {
 class Woman : Human {
     
     var gender:Gender
+    var isMother:Bool
     
     init(){
         gender = .female
+        isMother = false
     }
     
 }
@@ -29,9 +31,11 @@ class Woman : Human {
 class Man : Human {
     
     var gender:Gender
+    var isFather:Bool
     
     init(){
         gender = .male
+        isFather = false
     }
     
 }
@@ -45,4 +49,9 @@ lucy.gender
 let people:[Human] = [john,lucy]
 for person in people {
     print(person.gender)
+    //snippet of using is and as 
+    if person is Man {
+        //force down cast to Man and access isFather property
+        (person as! Man).isFather
+    }
 }
