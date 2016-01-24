@@ -35,7 +35,7 @@ enum Faces:String {
     case happy
     case sad
     case wink
-    case smile
+    case smile = "smile"
 }
 //by default raw value will be the string represntation of the enum case value
 var faceExpression = Faces(rawValue: "happy")!
