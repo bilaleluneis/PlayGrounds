@@ -10,6 +10,7 @@
 		52065DF61C3D7FB600F176E2 /* Function.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Function.playground; sourceTree = "<group>"; };
 		524DBB891C3A8BB900828C7B /* Collection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Collection.playground; sourceTree = "<group>"; };
 		526569DF1C39EBBF008E0261 /* Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optional.playground; sourceTree = "<group>"; };
+		52749E2E1C70377200FBA61E /* AbstractPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AbstractPattern.playground; sourceTree = "<group>"; };
 		52815C991C3F21E200A73940 /* PlayGrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayGrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52815C9A1C3F43FD00A73940 /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; };
 		52815C9B1C40193D00A73940 /* Enum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enum.playground; sourceTree = "<group>"; };
@@ -20,7 +21,6 @@
 		52C23ACF1C4DA23700654F81 /* Extension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Extension.playground; sourceTree = "<group>"; };
 		52C23AD01C4E623600654F81 /* Protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocols.playground; sourceTree = "<group>"; };
 		52D4B6C61C5855A40072927F /* AccessControl.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AccessControl.playground; sourceTree = "<group>"; };
-		52DDED991C6BA5B900D45CA7 /* AbstractClass.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AbstractClass.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 		526569C11C39EAB5008E0261 = {
 			isa = PBXGroup;
 			children = (
-				52DDED991C6BA5B900D45CA7 /* AbstractClass.playground */,
+				52749E2E1C70377200FBA61E /* AbstractPattern.playground */,
 				52D4B6C61C5855A40072927F /* AccessControl.playground */,
 				5283B56B1C53073200FB473B /* ErrorHandling.playground */,
 				52C23AD01C4E623600654F81 /* Protocols.playground */,
