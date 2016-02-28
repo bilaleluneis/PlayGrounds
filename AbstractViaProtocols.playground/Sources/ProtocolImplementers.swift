@@ -9,6 +9,7 @@ public class A : AbstractProtocol {
     public var a:String //must be public because protocol is declared public
     public init(){
         a = ""
+        //can access internal scope methods because this class is in same module
         self.methodAvailableInternallyOnly()
     }
     //must be public because protocol is declared public
