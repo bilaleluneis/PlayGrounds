@@ -22,6 +22,7 @@
 		52C23ACF1C4DA23700654F81 /* Extension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Extension.playground; sourceTree = "<group>"; };
 		52C23AD01C4E623600654F81 /* Protocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocols.playground; sourceTree = "<group>"; };
 		52D4B6C61C5855A40072927F /* AccessControl.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AccessControl.playground; sourceTree = "<group>"; };
+		52F89F441C84E51300382820 /* OperatorOverloading.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OperatorOverloading.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		526569C11C39EAB5008E0261 = {
 			isa = PBXGroup;
 			children = (
+				52F89F441C84E51300382820 /* OperatorOverloading.playground */,
 				522AAFF11C8266BA00B0E44B /* AbstractViaProtocols.playground */,
 				52749E2E1C70377200FBA61E /* AbstractPattern.playground */,
 				52D4B6C61C5855A40072927F /* AccessControl.playground */,
