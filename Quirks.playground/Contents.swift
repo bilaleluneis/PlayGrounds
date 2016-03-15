@@ -33,3 +33,5 @@ public struct PushingStructs {
         aClasssInstance = AclassInsideStruct()
     }
 }
+
+var testPushingStructs = PushingStructs()
