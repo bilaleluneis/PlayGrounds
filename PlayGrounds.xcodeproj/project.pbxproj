@@ -11,6 +11,7 @@
 		522AAFF11C8266BA00B0E44B /* AbstractViaProtocols.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AbstractViaProtocols.playground; sourceTree = "<group>"; };
 		524DBB891C3A8BB900828C7B /* Collection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Collection.playground; sourceTree = "<group>"; };
 		526569DF1C39EBBF008E0261 /* Optional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optional.playground; sourceTree = "<group>"; };
+		52692ED91C976D94003A5C4B /* Quirks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Quirks.playground; sourceTree = "<group>"; };
 		52749E2E1C70377200FBA61E /* AbstractPattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AbstractPattern.playground; sourceTree = "<group>"; };
 		52815C991C3F21E200A73940 /* PlayGrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayGrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52815C9A1C3F43FD00A73940 /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; };
@@ -39,6 +40,7 @@
 		526569C11C39EAB5008E0261 = {
 			isa = PBXGroup;
 			children = (
+				52692ED91C976D94003A5C4B /* Quirks.playground */,
 				52F89F441C84E51300382820 /* OperatorOverloading.playground */,
 				522AAFF11C8266BA00B0E44B /* AbstractViaProtocols.playground */,
 				52749E2E1C70377200FBA61E /* AbstractPattern.playground */,
