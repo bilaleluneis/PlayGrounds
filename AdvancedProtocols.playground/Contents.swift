@@ -43,13 +43,30 @@ class ClassExtender : ProtocolImplementer {
     }
 }
 
-// a general protocol that can be implemented by Class,Struct and Enum
+/* 
+    a general protocol that can be implemented by Class,Struct and Enum.
+    protocols that will be used in Enums cant have any computed properties.
+    so Im guesssing just functions?!
+ */
 
 public protocol GeneralProtocol {
     
+    func typeDescription() -> String
+    
+}
+
+extension GeneralProtocol {
+
+    public func typeDescription () -> String {
+        return "GeneralProtocol"
+    }
 }
 
 struct StructImplementingProtocol : GeneralProtocol {
+    
+    func typeDescription() -> String {
+        return "Struct Conforming to Protocol"
+    }
     
 }
 
@@ -65,10 +82,17 @@ enum EnumImplementingProtocol : GeneralProtocol {
         else if temp  > 0 && temp < 30 { self = .cold }
         else { self = .hot }
     }
+    
+    func typeDescription() -> String {
+        return "Enum Conforming to Protocol"
+    }
 }
 
 class ClassImplementingProtocol : GeneralProtocol {
     
+    func typeDescription() -> String {
+        return "Class Conforming to Protocol"
+    }
 }
 
 let valueType : GeneralProtocol = StructImplementingProtocol()
@@ -77,3 +101,8 @@ let refrenceType : GeneralProtocol = ClassImplementingProtocol()
 
 // this is valid because the enum, class and struct conform to GeneralProtocol Protocol
 let protocolArray:[GeneralProtocol] = [valueType, enumType, refrenceType]
+
+for aType in protocolArray {
+    let typeIs = aType.typeDescription()
+    print("type pulled from Collection is of " +  typeIs)
+}
