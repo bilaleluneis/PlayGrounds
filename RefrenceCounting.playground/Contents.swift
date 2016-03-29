@@ -11,27 +11,35 @@
     any of them from been released and cause a memory leak in return.
  */
 
-class A {
+class Car {
     
     init() {
-        
+        print("Instance of class Car with Address \(unsafeAddressOf(self))")
     }
     
     deinit {
-        
+        print("Releasing memory for instance of class Car with Address \(unsafeAddressOf(self))")
     }
     
 }
 
-class B {
+class Person {
     
-    init() {
-        
+    init(_ instanceOfA : A) {
+        testMemoryCycle = instanceOfA
+        print("Instance of class B with Address \(unsafeAddressOf(self))")
     }
     
     deinit {
-        
+        print("Releasing memory for instance of class B with Address \(unsafeAddressOf(self))")
     }
-    
 }
 
+func testMemoryViaForcedScope() -> Void {
+    _ = B(A())
+}
+
+
+testMemoryViaForcedScope()
+
+//TODO: need to implement this
