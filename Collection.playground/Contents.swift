@@ -3,6 +3,7 @@ Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/04/2016
 ...
 Playground code snippets to learn about Collections in Swift 2
+updated 08/23/2016 to comply with swift 3 changes
 */
 
 //Begin Arrays
@@ -16,9 +17,9 @@ intArrayB = [Int]()
 intArrayB += [1] //adds 1 into the array
 intArrayB.append(2) //another way to add to an array
 intArrayB.count // return the size of the array
-intArrayB.insert(intArrayC[2], atIndex: 2) //insert value from intArrayC at index 2 to intArrayB at index 2
+intArrayB.insert(intArrayC[2], at: 2) //insert value from intArrayC at index 2 to intArrayB at index 2
 
-intArrayB.removeAtIndex(0) //this is less safe and can cause out of bound errors if index is not valid
+intArrayB.remove(at: 0) //this is less safe and can cause out of bound errors if index is not valid
 intArrayB.removeFirst()
 intArrayB.removeLast()
 intArrayB.removeAll()
@@ -26,7 +27,7 @@ intArrayB.count
 
 let index = 5
 if index < intArrayB.count {
-    intArrayB.removeAtIndex(index)
+    intArrayB.remove(at: index)
 }
 
 if intArrayB.isEmpty {
@@ -34,7 +35,7 @@ if intArrayB.isEmpty {
 }
 
 intArrayA = [1,2,3,4,5,6,7,8,9,10]
-intArrayA.removeRange(0..<5)
+intArrayA.removeSubrange(0..<5)
 print(intArrayA)
 
 /*
@@ -47,7 +48,7 @@ print(intArrayA)
 */
 intArrayA.count
 for i in 0..<intArrayA.count {
-    intArrayA.insert(i, atIndex: i)
+    intArrayA.insert(i, at: i)
 }
 print(intArrayA)
 
@@ -93,7 +94,7 @@ for (key, value) in dictionaryE {
 }
 
 //removing value for key, the removeVlueForKey returns an Optional
-if let key = dictionaryD.removeValueForKey("three"){ //the dictionary doesnt have value for this key
+if let key = dictionaryD.removeValue(forKey: "three"){ //the dictionary doesnt have value for this key
     print("value for key = three removed")
 }else{
     print("no value for key = three found in dictionaryD")
