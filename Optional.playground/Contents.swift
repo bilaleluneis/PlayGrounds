@@ -3,6 +3,7 @@ Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/03/2016
 ...
 Playground code snippets to learn about Optionals and how to unwrap them in swift 2
+updated 08/23/2016 to comply with swift 3 changes
 */
 
 
@@ -25,7 +26,7 @@ if let constOfA = intA {
 }
 
 //using same above technique to unwrap multiple optionals and skip if any of them fail
-if let _intA = intA, _intB = intB, _intC = intC {
+if let _intA = intA, let _intB = intB, let _intC = intC {
     print("all optionals contained value")
 }else{
     print("an optional was nill in the above check !")
@@ -33,7 +34,7 @@ if let _intA = intA, _intB = intB, _intC = intC {
 
 //using same above technique but also adding a condition on value
 intC = 30
-if let _intA = intA, _intB = intB, _intC = intC where _intC == 30 {
+if let _intA = intA, let _intB = intB, let _intC = intC , _intC == 30 {
     print("all optionals contained value and intC value is \(_intC)")
 }else{
     print("an optional was nill in the above check !")
