@@ -1,8 +1,9 @@
 /*:
 Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/06/2016
+updated: 08/23/2016
 ...
-Playground code snippets to learn about functions in Swift 2
+Playground code snippets to learn about functions in Swift 3
 */
 
 func doesNothingReturnNothing(){
@@ -20,14 +21,14 @@ func doesNothingAndRetunsNon() -> () {
 }
 
 //fucntion with parameters
-func adder(firstInt:Int , secondInt:Int) -> Int {
+func adder(_ firstInt:Int , secondInt:Int) -> Int {
     return firstInt + secondInt;
 }
 
 let result = adder(3,secondInt:5) //by defualt this is how the call should be first argument requires no label, but second requires it!
 
 //function that will return optional
-func addUpTo10(firstInt:Int , secondInt:Int) -> Int? {
+func addUpTo10(_ firstInt:Int , secondInt:Int) -> Int? {
     let result = firstInt + secondInt
     if result <= 10 {
         return result
@@ -53,7 +54,7 @@ let (_,minutesOnly) = getTime() // this allows performance gain as no local copy
 print("minutes only captured via tuples: \(minutesOnly)")
 
 //using default parameters
-func sayHello(to:String = "World") {
+func sayHello(_ to:String = "World") {
     if to == "World" {
         print("no parameter passed in --> Hello World!")
     }else{
@@ -65,7 +66,7 @@ sayHello()
 sayHello("Bilal")
 
 //passing Optional parameter
-func sayHello(to:String?) {
+func sayHello(_ to:String?) {
     if let result = to {
         print("Hello \(result)!")
         
@@ -77,7 +78,7 @@ func sayHello(to:String?) {
 sayHello(nil)
 
 //Variadic function: functions with unknown number of arguments of same type
-func add(intsToAdd:Int...) ->Int {
+func add(_ intsToAdd:Int...) ->Int {
     var addResult:Int = 0
     
     if intsToAdd.isEmpty {
@@ -106,7 +107,7 @@ add(1,2)
 // I believe Classes are passed by Refrence in Swift by default
 var array:[Int] = [1,2,3]
 
-func addToArray(inout array:[Int], newElement:Int){
+func addToArray(_ array:inout [Int], newElement:Int){
     array.append(newElement)
 }
 
@@ -114,7 +115,7 @@ addToArray(&array, newElement: 4)
 array.count
 
 //functions that take a function as parameter
-func performOperation(firstNumber:Int , _ secondNumber:Int, _ operation:(Int,Int) ->Int) -> Int {
+func performOperation(_ firstNumber:Int , _ secondNumber:Int, operation:(Int,Int) ->Int) -> Int {
     return operation(firstNumber,secondNumber)
 }
 
@@ -122,9 +123,9 @@ func addOperation(n1:Int,n2:Int) -> Int {
     return n1 + n2
 }
 
-var opResult:Int = performOperation(1, 2, addOperation)
+var opResult:Int = performOperation(1, 2, operation: addOperation)
 
 // assign function to var and use
 var opToExecute:(Int,Int)->Int = addOperation //or could wrote it var opToExecute = addOperation , swift will infrence it
-var opResult2 = performOperation(3, 4, opToExecute)
+var opResult2 = performOperation(3, 4, operation: opToExecute)
 
