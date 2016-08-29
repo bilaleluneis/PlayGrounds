@@ -3,7 +3,7 @@ Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/06/2016
 updated: 08/23/2016
 ...
-Playground code snippets to learn about functions in Swift 3
+Playground code snippets to learn about functions in Swift
 */
 
 func doesNothingReturnNothing(){

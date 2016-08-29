@@ -2,7 +2,7 @@
 Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/07/2016
 ...
-Playground code snippets to learn about closures in Swift 2
+Playground code snippets to learn about closures in Swift
 */
 
 //assign closure to a variable

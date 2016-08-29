@@ -2,7 +2,7 @@
 Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/08/2016
 ...
-Playground code snippets to learn about Enums in Swift 2
+Playground code snippets to learn about Enums in Swift
 */
 
 enum Weather {
