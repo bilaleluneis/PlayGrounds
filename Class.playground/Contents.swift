@@ -2,7 +2,7 @@
 Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/10/2016
 ...
-Playground code snippets to learn about Classes in Swift 2
+Playground code snippets to learn about Classes in Swift
 */
 
 //classes can have dinit method that gets called when object is destroyed / removed from memory
@@ -40,7 +40,7 @@ class Person {
 }
 
 //person instance will be destroyed once it reaches the end scope of the function
-func testPersonDinit(personFirstName:String, personLastName:String, personAge:Int, personWeight:Float){
+func testPersonDinit(_ personFirstName:String, personLastName:String, personAge:Int, personWeight:Float){
     Person(firstName:personFirstName, lastName: personLastName, age:personAge, weight:personWeight)
 }
 
