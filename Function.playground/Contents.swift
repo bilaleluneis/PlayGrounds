@@ -50,7 +50,7 @@ time.hours
 time.minutes
 time.0
 time.1
-let (_,minutesOnly) = getTime() // this allows performance gain as no local copy of hours will be created
+let (_,minutesOnly) = getTime() // this allows performance gain as no local copy of hours will not be created
 print("minutes only captured via tuples: \(minutesOnly)")
 
 //using default parameters
