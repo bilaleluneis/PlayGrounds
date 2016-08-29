@@ -51,9 +51,9 @@ let colorWhite = Color.white(true)
 let colorRed = Color.red(rgb: "11111")
 let colorBlue = Color.blue(level: 10)
 
-func determineColor(colorEnum:Color) {
+func determineColor(_ colorEnum:Color) {
     switch colorEnum {
-        case .white(let isWhite): // this is a way to assing associate value to a constant
+        case .white(let isWhite): // this is a way to accessing associate value to a constant
             print("white color is: \(isWhite)")
         case .blue(let blueLevel):
             print("blue level is: \(blueLevel)")
