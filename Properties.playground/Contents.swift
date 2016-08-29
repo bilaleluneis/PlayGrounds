@@ -2,7 +2,7 @@
 Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/11/2016
 ...
-Playground code snippets to learn about Properties in Swift 2
+Playground code snippets to learn about Properties in Swift
 */
 
 import Foundation
@@ -26,7 +26,7 @@ struct Item {
         get{ return name + " " + brand}
         set{
             //by default you have a property called newValue that holds the value you set to
-            var splittedName = newValue.componentsSeparatedByString(" ")
+            var splittedName = newValue.components(separatedBy: " ")
             name = splittedName[0]
             brand = splittedName[1]
         }
@@ -45,7 +45,7 @@ struct Planet {
         willSet{ print("about to add planet\(newValue)") }
         didSet{
             print("old planet Name: \(oldValue)")
-            count++
+            count += 1
             print("number of planets now is \(count)")
         }
     }
