@@ -2,11 +2,11 @@
 Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/22/2016
 ...
-Playground code snippets to learn about Error Handling in Swift 2
+Playground code snippets to learn about Error Handling in Swift
 */
 
-// the enum holding errors should conform to ErrorType protocol
-enum MyErrors:ErrorType {
+// the enum holding errors should conform to Error protocol
+enum MyErrors:Error {
     case RecoverableError
     case FatalError
 }
@@ -17,7 +17,7 @@ func methodThatThrows() throws {
 }
 
 //example of function that returns a String and throws
-func methodThatThrowsOrReturn(value:String?) throws ->String {
+func methodThatThrowsOrReturn(_ value:String?) throws ->String {
     if let localValue = value {
         return localValue
     }
