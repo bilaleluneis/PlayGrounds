@@ -41,7 +41,12 @@ extension AbstractProtocol{
 internal class ClassThatHasAccessToEverthingInThisFile : AbstractProtocol {
     var a:String = ""
     func methodThatWillRequireImplByOtherClasses() -> Void {
-        helperMethodThatCanOnlyBeAccessedInThisFileScope()
+        /*
+            bellow used to be legal in swift 2 as everything
+            is visible withen the file.. but in swift 3 it is
+            no longer the case.
+        */
+        //helperMethodThatCanOnlyBeAccessedInThisFileScope()
     }
 }
 
