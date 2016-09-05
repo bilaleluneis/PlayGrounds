@@ -12,7 +12,7 @@ public class Abstract {
         pattern will only be thrown at runtime and not compile time.
     */
     public init(){
-        if self.dynamicType === Abstract.self {
+        if type(of: self) === Abstract.self {
             fatalError("Cant Create Instance of Abstract as it is an Abstract Class!")
         }
         self.a = ""
