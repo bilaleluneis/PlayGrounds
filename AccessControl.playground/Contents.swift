@@ -2,7 +2,7 @@
 Author: Bilal El Uneis (bilaleluneis@icloud.com)
 Since: 01/26/2016
 ...
-Playground code snippets to learn about Access Control in Swift 2
+Playground code snippets to learn about Access Control in Swift
 */
 
 // seems that swift will call the parent default init() even if you dont do it yourself
@@ -10,7 +10,7 @@ Playground code snippets to learn about Access Control in Swift 2
 var human:HumanAbstract = Person("John")
 
 /*
-    bellow will error, because the init is private
+    bellow will error, because the init is internal
     it looks like in swift the way to go in creating abstract class
     will also require you to create one concreet class in same file, because you
     wont be able to extend the abstract from outside the file as init will throw
