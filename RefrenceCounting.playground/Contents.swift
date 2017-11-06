@@ -14,29 +14,29 @@
 class Car {
     
     init() {
-        print("Instance of class Car with Address \(unsafeAddressOf(self))")
+        print("Instance of class Car with Address \(Unmanaged.passUnretained(self).toOpaque())")
     }
     
     deinit {
-        print("Releasing memory for instance of class Car with Address \(unsafeAddressOf(self))")
+        print("Releasing memory for instance of class Car with Address \(Unmanaged.passUnretained(self).toOpaque())")
     }
     
 }
 
 class Person {
     
-    init(_ instanceOfA : A) {
-        testMemoryCycle = instanceOfA
-        print("Instance of class B with Address \(unsafeAddressOf(self))")
+    init(_ instanceOfCar : Car) {
+        let _ = instanceOfCar
+        print("Instance of class Person with Address \(Unmanaged.passUnretained(self).toOpaque())")
     }
     
     deinit {
-        print("Releasing memory for instance of class B with Address \(unsafeAddressOf(self))")
+        print("Releasing memory for instance of class Person with Address \(Unmanaged.passUnretained(self).toOpaque())")
     }
 }
 
 func testMemoryViaForcedScope() -> Void {
-    _ = B(A())
+    _ = Person(Car())
 }
 
 
