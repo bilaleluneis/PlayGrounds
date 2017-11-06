@@ -4,6 +4,7 @@ Since: 01/04/2016
 ...
 Playground code snippets to learn about Collections in Swift
 updated 08/23/2016 to comply with swift 3 changes
+update 11/05/2017
 */
 
 //Begin Arrays
@@ -89,13 +90,13 @@ dictionaryA["Year"] = 2016
 let year:Int? = dictionaryA["Year"]
 
 //looping through dictionary
-for (key, value) in dictionaryE {
+for (_, value) in dictionaryE {
     print("\(value)")
 }
 
 //removing value for key, the removeVlueForKey returns an Optional
-if let key = dictionaryD.removeValue(forKey: "three"){ //the dictionary doesnt have value for this key
-    print("value for key = three removed")
+if let value = dictionaryD.removeValue(forKey: "one"){
+    print("value for key = \(value)")
 }else{
     print("no value for key = three found in dictionaryD")
 }
@@ -121,4 +122,10 @@ setA.contains(1)
 
 print("-------End Sets----------------------")
 //End Sets
+
+//in Swift 4 String is a collection of character, so you can apply collection patterns on a String
+let stringCollection: String = "Hello From New String in Swift as Collection"
+for character in stringCollection {
+    print(character)
+}
 
