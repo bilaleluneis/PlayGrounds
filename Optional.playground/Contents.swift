@@ -72,3 +72,27 @@ if let myage = me.info?.age {
     print("IdentifyingInfo Object in Person is nil !")
 }
 
+/*
+ the ! and ? are really sugar to hide the verbose nature of Optionals.
+ Optional in fact is an enum with associated values
+ enum Optional<T> {
+    case non
+    case some(T)
+ }
+ bellow is example of exposing what Optinal type is
+ */
+
+let firstExample = Optional<String>.none
+let secondExample = Optional<String>.some("a String Value")
+
+switch secondExample {
+case .none:
+    print("Optional String is nil")
+case .some(let value):
+    print("Optional String has value of \(value)")
+}
+
+//Optional default return if nil
+let optionalDefault : String? = "Value"
+let resultOfOptionalDefault = optionalDefault ?? "Empty" //notice the use of ?? operator
+
