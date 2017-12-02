@@ -96,3 +96,26 @@ case .some(let value):
 let optionalDefault : String? = "Value"
 let resultOfOptionalDefault = optionalDefault ?? "Empty" //notice the use of ?? operator
 
+/*
+ functions in Swift are first class citizen , they are treated as objects
+ and so they can be also optional.. I did this first in Kotlin as I was
+ learning how optionals work in Kotlin.
+ */
+
+func myPrint(_ toPrint: String?){
+    
+    if let stringToPrint = toPrint{
+        print(stringToPrint)
+    }
+}
+
+// a function that takes a function or lambda that is optional notice (lambda)?
+func callOptionalFunction(valueToPrint:String, _ lambda: ((String?) -> Void)?){
+    if let functionToExecute = lambda {
+        functionToExecute(valueToPrint)
+    }
+}
+
+callOptionalFunction(valueToPrint: "will not print", nil)
+callOptionalFunction(valueToPrint: "will print", myPrint)
+
