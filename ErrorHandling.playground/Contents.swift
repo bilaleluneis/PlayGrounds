@@ -36,3 +36,18 @@ func tester() {
 
 tester()
 
+// example using try! , which basically saying crash if the call throws
+func crashIfThrows() {
+    try! methodThatThrows()
+}
+
+//crashIfThrows() //uncomment to see the error thrown
+
+//example using try? .. which returns Optional (a value or nil) depending if try throws or not
+func dontCrashWhenThrows() -> String? {
+    let result = try? methodThatThrowsOrReturn(nil)
+    return result ?? "Nothing"
+}
+dontCrashWhenThrows()
+
+
